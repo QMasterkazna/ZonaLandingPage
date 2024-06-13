@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header-style {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid;
+}
+
+.logo-company img {
+	/* width: 200px; */
+	width: 15vw;
+}
+
+.header-option {
+	display: flex;
+	justify-content: center;
+}
+
+.phone {
+	font-family: 'Oswald', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	margin: 0 5vw 0 0;
+	font-size: medium;
+
+	& .code {
+		font-weight: bold;
+	}
+
+	& .call-message {
+		font-size: large;
+	}
+}
+
+.button-order {
+	margin: 0 5vw 0 0;
+
+	& button {
+		padding: 1.5vh 4vw 1.2vh 4vw;
+		font-size: large;
+		border-radius: 15px;
+		border: 2px solid black;
+		/* border: none; */
+		/* background-color: rgb(84, 151, 78); */
+		background-color: rgb(226, 223, 223);
+		color: black;
+		cursor: pointer;
+		transition: 200ms;
+	}
+
+	& button:hover {
+		opacity: 0.8;
+		transition: 200ms;
+		background-color: rgb(84, 151, 78);
+		color: white;
+	}
+}
+
+.block-product-company,
+.block-content-product,
+.block-content-personal,
+.block-content-brend,
+.block-content-info {
+	position: relative;
+	transition: 1s;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	/* border-bottom: solid 2px; */
+	& div {
+		transition: 0.8s;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: weight;
+		font-style: normal;
+		flex: 1;
+		margin: 20px;
+		text-align: center;
+		background-color: rgb(243, 219, 191);
+		padding: 20px;
+		border-radius: 5%;
+
+		& img {
+			width: 350px;
+			height: 400px;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 5%;
+			cursor: pointer;
+		}
+	}
+}
+.block-content-info > div > div {
+	text-align: start;
+	& p {
+		font-size: large;
+	}
+	& h3 {
+		text-align: center;
+	}
+}
+.block-content-personal>div:hover {
+	transform: translateY(-20px);
+	transition: 200ms;
+}
+
+.block-content-brend>div {
+	box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.26);
+}
+
+.block-content-product>div {
+	box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.26);
+}
+
+.block-content-personal>div>div {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	text-align: start;
+	margin: 0;
+	padding: 0;
+}
+
+.block-content-brend {
+	width: 70%;
+}
+
+.block-center-for-brend {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .block-content-personal > div:hover, .block-content-product > div:hover, .block-product-company > div:hover{
+		position: relative;
+		margin: 20px 20px 40px 20px;
+		transition: 0.8s;
+		transition-duration: inherit;
+	}  */
+
+.block-content-personal {
+	background-color: rgb(243, 219, 191);
+
+	& div {
+		background-color: rgb(235, 232, 232);
+	}
+}
+
+
+.block-content-product h3 {
+	margin-top: 10px;
+}
+
+.block-content-product p {
+	margin-bottom: 20px;
+}
+
+.block-content-product ul {
+	text-align: start;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.product-image {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+
+.text-popular-product>p {
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 60px;
+	margin-top: 3vh;
+
+}
+
+.company-info-div {
+	display: flex;
+	justify-content: center;
+}
+
+.company-info {
+  background-color: #f7f7f7; /* светлый фон */
+  padding: 20px; /* отступы внутри блока */
+  border: 1px solid #ddd; /* рамка вокруг блока */
+  border-radius: 10px; /* скругленные углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* тень под блоком */
+	width: 50%;
+}
+
+.company-info h2 {
+  margin-top: 0; /* убираем верхний отступ у заголовка */
+  font-weight: bold; /* жирный текст заголовка */
+  color: #333; /* темный текст заголовка */
+}
+
+.company-info p {
+  margin-bottom: 20px; /* отступ между текстом и формой */
+  font-size: 16px; /* размер текста */
+  color: #666; /* темный текст */
+}
+
+.subscribe-form {
+  display: flex; /* flexbox для формирования формы */
+  flex-wrap: wrap; /* перенос строк в форме */
+  justify-content: center; /* центрирование формы */
+}
+
+.subscribe-form label {
+  width: 100%; /* ширина метки */
+  margin-bottom: 10px; /* отступ между метками */
+  font-size: 16px; /* размер текста метки */
+  color: #333; /* темный текст метки */
+}
+
+.subscribe-form input {
+  width: 100%; /* ширина поля ввода */
+  height: 40px; /* высота поля ввода */
+  margin-bottom: 20px; /* отступ между полями ввода */
+  padding: 10px; /* отступы внутри поля ввода */
+  border: 1px solid #ccc; /* рамка вокруг поля ввода */
+  border-radius: 5px; /* скругленные углы поля ввода */
+}
+
+.subscribe-form button[type="submit"] {
+  width: 100%; /* ширина кнопки */
+  height: 40px; /* высота кнопки */
+  background-color: #4CAF50; /* зеленый фон кнопки */
+  color: #fff; /* белый текст кнопки */
+  border: none; /* убираем рамку вокруг кнопки */
+  border-radius: 5px; /* скругленные углы кнопки */
+  cursor: pointer; /* указатель мыши в виде руки */
+}
+
+.subscribe-form button[type="submit"]:hover {
+  background-color: #3e8e41; /* темно-зеленый фон кнопки при наведении */
+}
+
+/* CSS for button to up  */
+#back-to-top {
+  position: fixed; /* фиксированная позиция кнопки */
+  bottom: 20px; /* отступ от нижнего края экрана */
+  right: 20px; /* отступ от правого края экрана */
+  display: none; /* кнопка изначально скрыта */
+  cursor: pointer; /* указатель мыши в виде руки */
+  font-size: 40px; /* размер текста кнопки */
+  background-color: #4CAF50; /* зеленый фон кнопки */
+  color: #fff; /* белый текст кнопки */
+  border: none; /* убираем рамку вокруг кнопки */
+  border-radius: 100px; /* круглая кнопка */
+  padding: 35px; /* отступы внутри кнопки */
+}
+
+#back-to-top:hover {
+  background-color: #3e8e41; /* темно-зеленый фон кнопки при наведении */
+}
+
+/* блок фильтр */
+.block-filter {
+  background-color: #f7f7f7; /* светлый фон */
+  padding: 20px; /* отступы внутри блока */
+  border: 1px solid #ddd; /* рамка вокруг блока */
+  border-radius: 10px; /* скругленные углы */
+	display: flex;
+}
+
+.block-filter p {
+  margin-bottom: 10px; /* отступ между текстом и списком */
+  font-size: 18px; /* размер текста */
+  font-weight: bold; /* жирный текст */
+}
+
+.block-filter ul {
+  list-style: none; /* убираем маркеры списка */
+  padding: 0; /* убираем отступы списка */
+  margin: 0; /* убираем отступы списка */
+}
+
+.block-filter li {
+  margin-bottom: 10px; /* отступ между пунктами списка */
+}
+
+.block-filter a {
+  text-decoration: none; /* убираем подчеркивание ссылок */
+  color: #333; /* темный текст ссылок */
+}
+
+.block-filter a.active {
+  font-weight: bold; /* жирный текст активной ссылки */
+  color: #4CAF50; /* зеленый текст активной ссылки */
+}
+
+.block-filter a:hover {
+  color: #3e8e41; /* темно-зеленый текст ссылок при наведении */
+}
+
+.block-content-filter {
+	/* border: solid 2px; */
+}
+
+.block-content-check {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	/* justify-content: space-around; */
+	
+
+	& .block-content-item-filter {
+		padding-top: 2vh;
+		background-color: rgb(243, 219, 191);
+		width: 420px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 10px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	& .block-content-item-filter:hover {
+		transform: translateY(-5px);
+		transition: 0.3s;
+	}
+	& img {
+		border: solid 1px;
+		border-radius: 10px;
+		width: 400px;
+		height: 200px;
+		object-fit: cover;
+	}
+}
+
+#submit-button {
+	border-radius: 10px;
+	padding: 10px;
+	transition: 200ms;
+}
+#submit-button:hover {
+	background-color: #4CAF50;
+	color: white;
+	transition: 200ms;
+}
